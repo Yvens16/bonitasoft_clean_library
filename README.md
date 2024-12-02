@@ -29,7 +29,7 @@ mvn test
 
 - Architecture
   - I decided to go for a clean and screaming achitecture, making the code portable and easily testable.
-  - Why screaming, because it is structure by modules collection for the managment of the books by admin users and borrowing for non admin users of the library.
+  - Why screaming, because it is structure by modules, collection for the managment of the books by admin users and borrowing for non admin users of the library.
   - Why clean architecture, because every layer is seprated started from the domain which contains the business objects. The usecases which contains the application code to handle actions by users. To the infrastructure which contains the framework code (controllers).
   - Using Dependency Injection, we make sure that the framework depends on the usecases which depend on the domain. Thus making our code easily testable, easily portable.
   - I should mention that I took some shortcuts for example by not implementing a Presenter layer with (mappers and dto) to convert the data.
